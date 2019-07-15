@@ -1,0 +1,78 @@
+:root {
+    --form-margin: 30px;
+    --input-width: calc(100% - var(--form-margin) * 2);
+    --form-border: 1px solid #dddddd;
+    --form-background-color: #f1f1f1;
+    --text-color: rgb(0, 2, 110);
+    --button-hover-col: #1d87ff;
+}
+
+body {
+    padding: 20px;
+}
+
+.timeline-container {
+    align-self: center;
+}
+
+.margin-20 {
+    margin: var(--form-margin);
+}
+
+.text-blue {
+    color: var(--text-color);
+}
+
+.logger-panel,
+.memo-panel {
+    display: block;
+    border: var(--form-border);
+    background-color: var(--form-background-color);
+    margin: 10px;
+}
+
+.memo-panel {
+    margin-top: 40px;
+    position: relative;
+}
+
+input[type=text] {
+    display: block;
+    width:  var(--input-width);
+    border: var(--form-border);
+    font-size: 1.3em;
+    height: 3em;
+    line-height: 3em;
+    outline: none;
+    padding: 15px;
+}
+
+textarea {
+    display: block;
+    width:  var(--input-width);
+    border: var(--form-border);
+    font-size: 1.3em;
+    resize: none; 
+    padding: 15px;
+}
+
+button {
+    margin: 20px;
+}
+
+button i, 
+.color-blue {
+    border-radius: 0;
+}
+
+.button-delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.button-delete :hover {
+    color: var(--button-hover-col);
+}
+
